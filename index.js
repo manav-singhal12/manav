@@ -106,7 +106,7 @@ async function displayAlbums() {
     return songs
 }
 async function main() {
-    await getsongs("songs/paradox");
+    await getsongs("songs/Paradox");
     playMusic(songs[0], true)
     await displayAlbums()
     play.addEventListener("click", () => {
