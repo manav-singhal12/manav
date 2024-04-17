@@ -60,7 +60,9 @@ async function playMusic(track, pause = false) {
 //Display Albums
 async function displayAlbums() {
     let a = await fetch("/songs/");
+    console.log(a);
     let response = await a.text();
+    console.log(response);
     let div = document.createElement("div");
     div.innerHTML = response;
     console.log(div)
